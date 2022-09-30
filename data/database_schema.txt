@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS "yelp_df" (
+"Name" TEXT,
+  "Address" TEXT,
+  "Type" TEXT,
+  "Rating" REAL
+);
+CREATE TABLE IF NOT EXISTS "fsq_df" (
+"Name" TEXT,
+  "Address" TEXT,
+  "Type" TEXT
+);
+CREATE TABLE IF NOT EXISTS "fsq" (
+"Name" TEXT,
+  "Address" TEXT,
+  "Type" TEXT,
+  "Rating" TEXT,
+  "Price" TEXT,
+  "Popularity" REAL
+);
+CREATE TABLE IF NOT EXISTS "yelp" (
+"Name" TEXT,
+  "Address" TEXT,
+  "Type" TEXT,
+  "Rating" REAL,
+  "Price" TEXT
+);

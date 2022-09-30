@@ -18,13 +18,15 @@ Requests were sent by using the ```requests``` package. To avoid sending several
 To parse through the response object, the ```JSON``` and ```pprint``` packages were used. It was found that the response file was a nested dictionary. After some browsing, empty lists and a for loop was used to extract the data from the JSON file. The same approach was used for both APIs
 
 ### Creating the ```DataFrame```
-Dictionaries were created using the lists generated in the previous step. A dictionary was chosen because this data type can easily be ported into a ```DataFrame```. 
+Dictionaries were created using the lists generated in the previous step. A dictionary was chosen because this data type can easily be ported into a ```DataFrame```. The image below shows what the ```DataFrame``` initially looked like.
+![DataFrame output](images/df-output.png)
 
 ### Creating a database using ```SQLite3```
 Following that, a database was created using the ```SQLite3``` package. Once the ```DataFrames``` were pushed to the database using the ```to_sql()``` method, the data could be accessed by using the ```read_sql()``` method.
 
 ## Results
 Both the Foursquare and Yelp APIs are well documented, and getting data from them was not difficult. The Foursquare documentation had a nice 'try it!' feature, which was useful in learning how to navigate it. It also looked more modern and user-friendly. 
+![Try It! feature](images/try-it.png)
 
 I opted not to specify the type of venue to keep a wider research spectrum. It was interesting to notice that while Yelp only provided restaurant-related entries, the Foursquare API also included other types of venues, such as banks, hotels, churches and other businessess. In that sense, we can consider the Foursquare API as the more complete one. 
 
